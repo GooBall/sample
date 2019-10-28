@@ -1,0 +1,51 @@
+{
+  "name": "app-status",
+  "version": "1.7.1",
+  "description": "Display all needed info on current running data stacks",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build index.html --experimental-scope-hoisting",
+    "dev": "parcel watch index.html",
+    "prebuild": "rm -rf dist/",
+    "server:dev": "NODE_ENV=\"development\" nodemon server.js",
+    "server:start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Callum Williams",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@fortawesome/free-brands-svg-icons": "^5.10.1",
+    "@fortawesome/free-solid-svg-icons": "^5.10.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "express": "^4.17.1",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.4.2",
+    "moment": "^2.24.0",
+    "parcel-bundler": "^1.12.3",
+    "path": "^0.12.7",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "serve-static": "^1.14.1",
+    "styled-components": "^5.0.0-beta.8",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "@ht2-labs/typescript-project": "2.0.39",
+    "@types/react": "16.9.0",
+    "@types/react-dom": "16.8.5",
+    "@types/styled-components": "4.1.18",
+    "express-enforces-ssl": "1.1.0",
+    "helmet": "3.20.0",
+    "lodash": "4.17.15",
+    "tsutils": "3.17.1"
+  }
+}
